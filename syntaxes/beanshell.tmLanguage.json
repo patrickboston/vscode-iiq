@@ -1,0 +1,28 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Beanshell",
+	"scopeName": "text.xml.beanshell",
+	"injectionSelector": "L:text.xml",
+	"patterns": [
+		{
+			"include": "#beanshell-code-block"
+		}
+	],
+	"repository": {
+		"beanshell-code-block": {
+			"patterns": [
+				{
+					"contentName": "meta.embedded.block.beanshell",
+					"name": "text.xml.beanshell",
+					"begin": "<!\\[CDATA\\[\\s*",
+					"end": "\\]\\]>",
+					"patterns": [
+						{
+							"include": "source.java"
+						}
+					] 
+				}
+			]
+		}
+	}
+}
