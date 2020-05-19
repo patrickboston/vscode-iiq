@@ -1,13 +1,23 @@
 {
 	"name": "vscode-iiq",
+	"author": {
+		"email": "patrickboston8@gmail.com",
+		"name": "Patrick Boston"
+	},
+	"publisher": "Patrick Boston",
 	"displayName": "vscode-iiq",
 	"description": "Support for IdentityIQ development",
-	"version": "0.0.1",
+	"keywords": [
+		"IdentityIQ",
+		"Beanshell",
+		"SailPoint"
+	],
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.45.0"
 	},
 	"categories": [
-		"Other"
+		"Programming Languages"
 	],
 	"activationEvents": [
 		"onCommand:extension.helloWorld"
